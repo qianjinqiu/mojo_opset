@@ -52,6 +52,7 @@ OPS = {
     "swa": "swa",
     "rope": "rope",
     "fill_short_context_topk": "fill_short_context_topk",
+    "get_compressed_slot_mapping": "get_compressed_slot_mapping",
 }
 
 # Add only differences once specialized wrappers exist, for example:
