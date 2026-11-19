@@ -55,7 +55,7 @@ OPS = {
     "fused_inv_rope_fp8_quant": "fused_inv_rope_fp8_quant",
     "fused_q_kv_rmsnorm": "fused_q_kv_rmsnorm",
     "get_compressed_slot_mapping": "get_compressed_slot_mapping",
-    "rope_quant_insert": "rope_quant_insert",
+    "rope_quant_insert": "rope_quant_insert",    "fused_q_kv_rmsnorm": "fused_q_kv_rmsnorm",
 }
 
 

@@ -21,7 +21,7 @@ supported shapes, dtypes and options.
 | `flex_attention_v2` | triton | triton |
 | `fused_inv_rope_fp8_quant` | triton (quantize=False only) | triton |
 | `fused_q_kv_rmsnorm_quant` | — (no FP8) | triton |
-| `fused_q_kv_rmsnorm` | triton | triton |
+| `fused_q_kv_rmsnorm` | triton | triton || `fused_q_kv_rmsnorm` | triton | triton |
 | `gelu` | triton, torch_npu | triton, torch_npu |
 | `gemm`, `mxfp8_dequant_gemm`, `mxfp4_gemm` | — | native |
 | `get_compressed_slot_mapping` | triton | triton |

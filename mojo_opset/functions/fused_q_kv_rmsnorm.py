@@ -28,8 +28,6 @@ def _check_inputs(qr, kv, q_weight, kv_weight, eps):
             raise ValueError(f"{name} must be contiguous")
         if weight.dtype != qr.dtype:
             raise ValueError(f"{name} must share the input dtype")
-    if kv_weight.device != qr.device:
-        raise ValueError("kv_weight must be on the input device")
     if eps < 0:
         raise ValueError("eps must be non-negative")
 
