@@ -52,6 +52,8 @@ OPS = {
     "swa": "swa",
     "rope": "rope",
     "fill_short_context_topk": "fill_short_context_topk",
+    "fused_q_kv_rmsnorm": "fused_q_kv_rmsnorm",
+    "fused_q_kv_rmsnorm_quant": "fused_q_kv_rmsnorm",
     "get_compressed_slot_mapping": "get_compressed_slot_mapping",
 }
 

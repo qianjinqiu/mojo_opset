@@ -12,6 +12,7 @@ npu.a2:
   flash_attention_infer: triton
   flex_attention: triton
   flex_attention_v2: triton
+  fused_q_kv_rmsnorm: triton
   gelu: triton
   get_compressed_slot_mapping: triton
   group_gemm: triton
