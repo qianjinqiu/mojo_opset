@@ -70,6 +70,7 @@ OPS = {
     "swa_infer": "attention",
     "native_swa_infer": "attention",
     "rope": "rope",
+    "rope_quant_insert": "rope_quant_insert",
 }
 
 

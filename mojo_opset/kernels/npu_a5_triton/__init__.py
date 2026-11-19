@@ -56,6 +56,7 @@ OPS = {
     "fused_q_kv_rmsnorm": "fused_q_kv_rmsnorm",
     "fused_q_kv_rmsnorm_quant": "fused_q_kv_rmsnorm",
     "get_compressed_slot_mapping": "get_compressed_slot_mapping",
+    "rope_quant_insert": "rope_quant_insert",
 }
 
 # Add only differences once specialized wrappers exist, for example:
