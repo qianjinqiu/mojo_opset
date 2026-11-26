@@ -1165,6 +1165,34 @@ operators:
             - tests/performance/modules/test_normalization.py
           950/performance:
             - tests/performance/modules/test_normalization.py
+  indexer_k_norm_rope_store:
+    rules:
+      - paths:
+          - mojo_opset/functions/indexer_k_norm_rope_store.py
+          - mojo_opset/kernels/torch/indexer_k_norm_rope_store.py
+        jobs:
+          950/performance:
+            - tests/performance/functions/test_indexer_k_norm_rope_store.py
+          950/triton:
+            - tests/functions/test_indexer_k_norm_rope_store.py
+      - paths:
+          - mojo_opset/kernels/npu_a5_triton/indexer_k_norm_rope_store.py
+        jobs:
+          950/performance:
+            - tests/performance/functions/test_indexer_k_norm_rope_store.py
+          950/triton:
+            - tests/functions/test_indexer_k_norm_rope_store.py
+      - paths:
+          - tests/functions/test_indexer_k_norm_rope_store.py
+        jobs:
+          950/triton:
+            - tests/functions/test_indexer_k_norm_rope_store.py
+      - paths:
+          - tests/performance/functions/test_indexer_k_norm_rope_store.py
+        jobs:
+          950/performance:
+            - tests/performance/functions/test_indexer_k_norm_rope_store.py
+
   join_prob_reject_sampling:
     rules:
       - paths:

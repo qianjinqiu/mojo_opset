@@ -17,6 +17,7 @@ OPS = {
     "embedding_nf4_dequant": "over_encoding.embedding",
     "over_encoding_decode": "over_encoding.fused_over_encoding",
     "lightning_indexer": "lightning_indexer",
+    "indexer_k_norm_rope_store": "indexer_k_norm_rope_store",
     "store_lowrank": "store_lowrank",
     "store_paged_kv_cache": "kv_cache",
     "rope_infer": "rope",
