@@ -49,6 +49,7 @@ OPS = {
     "dynamic_quant": "quantization",
     "varlen_fa_infer": "varlen_fa",
     "causal_conv1d_update_state_infer": "convolution",
+    "combine_topk_swa_indices": "combine_topk_swa_indices",
     "layer_norm_infer": "normalization",
     "rms_norm_infer": "normalization",
     "group_rms_norm_infer": "normalization",

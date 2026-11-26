@@ -191,6 +191,49 @@ operators:
             - tests/performance/modules/test_convolution.py
           950/performance:
             - tests/performance/modules/test_convolution.py
+  combine_topk_swa_indices:
+    rules:
+      - paths:
+          - mojo_opset/functions/combine_topk_swa_indices.py
+          - mojo_opset/kernels/torch/combine_topk_swa_indices.py
+        jobs:
+          910b/performance:
+            - tests/performance/functions/test_combine_topk_swa_indices.py
+          910b/triton:
+            - tests/functions/test_combine_topk_swa_indices.py
+          950/performance:
+            - tests/performance/functions/test_combine_topk_swa_indices.py
+          950/triton:
+            - tests/functions/test_combine_topk_swa_indices.py
+      - paths:
+          - mojo_opset/kernels/npu_a2_triton/combine_topk_swa_indices.py
+        jobs:
+          910b/performance:
+            - tests/performance/functions/test_combine_topk_swa_indices.py
+          910b/triton:
+            - tests/functions/test_combine_topk_swa_indices.py
+      - paths:
+          - mojo_opset/kernels/npu_a5_triton/combine_topk_swa_indices.py
+        jobs:
+          950/performance:
+            - tests/performance/functions/test_combine_topk_swa_indices.py
+          950/triton:
+            - tests/functions/test_combine_topk_swa_indices.py
+      - paths:
+          - tests/functions/test_combine_topk_swa_indices.py
+        jobs:
+          910b/triton:
+            - tests/functions/test_combine_topk_swa_indices.py
+          950/triton:
+            - tests/functions/test_combine_topk_swa_indices.py
+      - paths:
+          - tests/performance/functions/test_combine_topk_swa_indices.py
+        jobs:
+          910b/performance:
+            - tests/performance/functions/test_combine_topk_swa_indices.py
+          950/performance:
+            - tests/performance/functions/test_combine_topk_swa_indices.py
+
   dequant:
     rules:
       - paths:
